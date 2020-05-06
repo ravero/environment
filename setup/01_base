@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## References
+## - Snazzy Labs Homebrew Tips - https://www.youtube.com/watch?v=Ym2pxzWpTNw&t=19s / https://pastebin.com/jV9XzPrs
+
+## Homebrew
+## - Last updated command:  24/03/2020
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+## Homebrew Formulaes
+
+brew install mas                            # mas-cli - https://github.com/mas-cli/mas
+brew install htop
+brew install speedtest-cli
+brew install youtube-dl ffmpeg
+brew install imagemagick
+brew install neovim                         # https://github.com/neovim/neovim/wiki/Installing-Neovim
+brew install duti                           # Change app defaults command line - https://github.com/moretension/duti
+
+## Oh My Zsh!
+## - Last updated command: 24/03/2020
+
+#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
