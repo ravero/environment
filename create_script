@@ -19,7 +19,7 @@ if [[ $# -eq 1 && $open_editor ]]; then
 	open_editor="true"
 fi
 
-declare -r bindir="${HOME}/bin"
+declare -r bindir="${HOME}/bin/scripts"
 
 # Check bin directory exists
 if [[ ! -d $bindir ]]; then

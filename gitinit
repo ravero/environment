@@ -1,0 +1,56 @@
+#!/bin/bash
+
+#------------------------------------------------------------------------------
+# Initialize a Git Repository and do the initial commit.
+# Optionally generates a gitignore file.
+#------------------------------------------------------------------------------
+
+generate_gitignore() { 
+	dotnet giio generate $1 
+}
+
+print_usage() {
+	echo "Usage: gitinit [-i <project_type>] [-g <type>]"
+}
+
+while getopts "i:g:" opt; do
+	case ${opt} in
+		i)
+			case ${OPTARG} in
+				android)
+					generate_gitignore "android,macos,windows"
+					;;
+				ios)
+					generate_gitignore "xcode,macos"
+					;;
+				pods)
+					generate_gitignore "xcode,cocoapods,macos"
+					;;
+				xamarin)
+					generate_gitignore "android,xcode,macos,windows,xamarinstudio,visualstudio"
+					;;
+				macos)
+					generate_gitignore "macos"
+					;;
+				windows)
+					generate_gitignore "windows"
+					;;
+				\?)
+					print_usage
+					;;
+			esac
+			;;
+		g)
+			generate_gitignore $OPTARG
+			;;
+		\?)
+			print_usage
+			;;
+	esac
+done
+
+echo "Initializing the repository with initial commit..."
+git init
+git add .
+git commit -m "Initial Commit."
+echo "Done."
