@@ -18,6 +18,7 @@ brew install imagemagick
 brew install neovim                         # https://github.com/neovim/neovim/wiki/Installing-Neovim
 brew install duti                           # Change app defaults command line - https://github.com/moretension/duti
 brew install gh                             # GitHub Command Line Interface - https://github.com/cli/cli
+brew install tokei			    # Programming Stats Utility - https://github.com/XAMPPRocky/tokei
 
 ## Oh My Zsh!
 ## - Last updated command: 24/03/2020

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#------------------------------------------------------------------------------
+# Run the caffeinate command with my preferred defaults
+#------------------------------------------------------------------------------
+
+timeoutmin=${1:-10}             # Receives the number of minutes as first arg. If not passed defaults to 10 min.
+
+num_regex='^[0-9]+$'            # Regex used to check if argument is a number
+! [[ $timeoutmin =~ $num_regex ]] && echo "Argument should be the number of minutes." && exit 1
+
+let timeoutms=60*$timeoutmin
+
+echo "Running caffeinate for $timeoutmin minutes..."
+caffeinate -diu -t $timeoutms
