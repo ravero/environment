@@ -1,4 +1,33 @@
 #!/bin/bash
+# Setup Scripts - 01 Basic Stuff
+
+#------------------------------------------------------------------------------
+# Network Setup
+#
+# This script will set defaults for network connections on the computer.
+# Check if the Network Services apply correctly. If you need to list use:
+#
+#   networksetup -listallnetworkservices
+#
+# Then update the script apropriately.
+#------------------------------------------------------------------------------
+
+echo "Setting DNS Servers for Wi-Fi and Display Ethernet network services..."
+networksetup -setdnsservers "Wi-Fi" 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001 
+networksetup -setdnsservers "Display Ethernet" 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
+echo "Settings applied!"
+
+echo ""
+echo "Wi-Fi DNS Servers:"
+networksetup -getdnsservers "Wi-Fi"
+
+echo ""
+echo "Display Ethernet DNS Servers:"
+networksetup -getdnsservers "Display Ethernet"
+
+#------------------------------------------------------------------------------
+# Homebrew and Base required formulaes
+#------------------------------------------------------------------------------
 
 ## References
 ## - Snazzy Labs Homebrew Tips - https://www.youtube.com/watch?v=Ym2pxzWpTNw&t=19s / https://pastebin.com/jV9XzPrs
@@ -7,20 +36,4 @@
 ## - Last updated command:  24/03/2020
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-## Homebrew Formulaes
-
-brew install mas                            # mas-cli - https://github.com/mas-cli/mas
-brew install htop
-brew install speedtest-cli
-brew install youtube-dl ffmpeg
-brew install imagemagick
-brew install neovim                         # https://github.com/neovim/neovim/wiki/Installing-Neovim
-brew install duti                           # Change app defaults command line - https://github.com/moretension/duti
-brew install gh                             # GitHub Command Line Interface - https://github.com/cli/cli
-brew install tokei			    # Programming Stats Utility - https://github.com/XAMPPRocky/tokei
-
-## Oh My Zsh!
-## - Last updated command: 24/03/2020
-
-#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+brew install mas                            # mas-cli - https://github.com/mas-cli/mas - Required for app store script

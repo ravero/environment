@@ -1,5 +1,9 @@
 #!/bin/bash
 
+## Essential
+mas install 1333542190	        # 1Password
+mas install 937984704           # Amphetamine
+
 ## Developer Tools
 mas install 497799835           # Xcode
 mas install 1450874784          # Transporter
@@ -7,6 +11,7 @@ mas install 1294179975          # AppIconBuilder
 mas install 1178548760          # Resdroid
 mas install 1388020431          # DevCleaner
 mas install 768053424           # Gapplin
+mas install 640199958		    # Apple Developer
 
 ## Install Office Apps
 mas install 462054704           # Microsoft Word
@@ -23,13 +28,12 @@ mas install 409203825           # Numbers
 mas install 409183694           # Keynote
 
 ## Utilities
-mas install 937984704           # Amphetamine
 mas install 1153157709          # Speedtest
 mas install 1333277187          # Disconnect Premium
 mas install 411643860           # DaisyDisk
 mas install 549083868           # Display Menu
 mas install 430255202           # Mactracker
-mas install 407963104           # Pixelmator
+mas install 1463361068		    # Exchange Rates 3
 
 ## Others
 mas install 449155338           # SomaFM
@@ -45,3 +49,4 @@ mas install 1473726602          # Tab Space
 
 ## Legacy
 #mas install 1384080005          # Tweetbot
+#mas install 407963104           # Pixelmator - was on the previous family account

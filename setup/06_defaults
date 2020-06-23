@@ -29,3 +29,4 @@
 
 duti -s org.videolan.vlc mp4 viewer
 duti -s com.microsoft.VSCode md all
+duti -s com.microsoft.VSCode txt all
