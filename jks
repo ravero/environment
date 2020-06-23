@@ -1,0 +1,3 @@
+#!/bin/bash
+# Command Reference: https://stackoverflow.com/questions/12893995/how-to-check-certificate-name-and-alias-in-keystore-files
+keytool -v -list -keystore $1
