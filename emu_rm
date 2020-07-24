@@ -1,0 +1,15 @@
+#!/bin/bash
+
+## Copy files
+app_support_path="${HOME}/Library/Application Support"
+openemu_path="${app_support_path}/OpenEmu/"
+
+if [[ -d "$openemu_path" ]]; then
+    echo "Removing the OpenEmu library ..."
+    rm -rf "$openemu_path"
+else
+    echo "No library found."
+fi
+
+## Uninstall OpenEmu
+brew cask uninstall openemu-experimental
