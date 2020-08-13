@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#------------------------------------------------------------------------------
+# Setup Game Emulation
+#------------------------------------------------------------------------------
+
 ## Copy files
 app_support_path="${HOME}/Library/Application Support/"
 backup_path="${HOME}/OneDrive/Games"
