@@ -1,0 +1,5 @@
+#!/bin/bash
+# Reference: https://operating-systems.wonderhowto.com/how-to/eject-devices-from-use-terminal-for-mac-337571/
+
+# Use the `df` command to list all the devies
+hdiutil detach $1
