@@ -1,0 +1,24 @@
+#! /bin/bash
+# Reference: http://feedback.choosyosx.com/forums/6165-general/suggestions/12480483-add-export-import-of-rules-and-setting
+
+# Reference to the export file
+export_filename="choosy_behaviours.plist"
+export_folder="./data"
+export_file="${export_folder}/${export_filename}"
+
+if [[ ! -f "${export_file}" ]]; then
+    echo "No previous export found."
+    exit 1;
+fi
+
+# Reference to the configuration file
+config_filename="behaviours.plist"
+config_folder="${HOME}/Library/Application Support/Choosy"
+config_file="${config_folder}/${config_filename}"
+
+if [[ ! -d "${config_folder}" ]]; then
+    echo "App configuration folder doesn't exists. Creating ..."
+    mkdir "${config_folder}"
+fi
+
+cp "${export_file}" "${config_filename}"
