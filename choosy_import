@@ -21,4 +21,4 @@ if [[ ! -d "${config_folder}" ]]; then
     mkdir "${config_folder}"
 fi
 
-cp "${export_file}" "${config_filename}"
+cp "${export_file}" "${config_file}"

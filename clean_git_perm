@@ -1,0 +1,5 @@
+# This script will clean git permissions changes that appears on the repository
+# after moving from a different installation or machine
+#
+# Reference: https://stackoverflow.com/questions/1580596/how-do-i-make-git-ignore-file-mode-chmod-changes
+git diff --summary | grep --color 'mode change 100644 => 100755' | cut -d' ' -f7-|tr '\n' '\0'|xargs -0 chmod -x
