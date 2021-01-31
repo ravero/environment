@@ -84,6 +84,18 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
+		<integer>3</integer>
+		<key>behaviourArgument</key>
+		<string></string>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "https://accounts.google.com/o/oauth2/v2/auth"</string>
+		<key>title</key>
+		<string>Google Login - Non-specific</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
 		<integer>6</integer>
 		<key>behaviourArgument</key>
 		<dict>
@@ -268,6 +280,18 @@
 		<string>URL CONTAINS "newrelic.com"</string>
 		<key>title</key>
 		<string>CI&amp;T/ABI - New Relic</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>3</integer>
+		<key>behaviourArgument</key>
+		<string></string>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "login.microsoftonline.com"</string>
+		<key>title</key>
+		<string>Office 365 - Login</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
