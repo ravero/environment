@@ -4,13 +4,14 @@
 #------------------------------------------------------------------------------
 
 ## Homebrew Installation/Update
+# Reference: Snazzy Labs Homebrew Tips - https://www.youtube.com/watch?v=Ym2pxzWpTNw&t=19s / https://pastebin.com/jV9XzPrs
 if ! command -v brew &> /dev/null
 then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 ## Clone the Environment Repository
-ENVIRONMENT_GIT_REMOTE="https://github.com/ravero/environment.git"
+ENVIRONMENT_GIT_REMOTE="git@github.com:ravero/environment.git"
 ENVIRONMENT_LOCAL_PATH="${HOME}/Environment"
 
 # Check if the Environment Folder doesn't already exists

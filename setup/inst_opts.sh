@@ -4,10 +4,6 @@ read -p "Do you want to install 'VMWare Fusion'? " -n 1 -r
 echo
 [[ $REPLY =~ ^[Yy]$ ]] && brew install --cask vmware-fusion
 
-read -p "Do you want to install 'Spark'? " -n 1 -r
-echo
-[[ $REPLY =~ ^[Yy]$ ]] && mas install 1176895641          # Spark
-
 read -p "Do you want to install 'Alfred'? " -n 1 -r
 echo
 [[ $REPLY =~ ^[Yy]$ ]] && brew install --cask alfred
