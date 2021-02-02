@@ -20,8 +20,8 @@ if [[ ! -d $ENVIRONMENT_LOCAL_PATH ]]; then
 fi
 
 # Install essential stuff
-brew install --cask iterm2
 brew install mas                            # mas-cli - https://github.com/mas-cli/mas - Required for app store script
 
+read -p "Check if the App Store is signed-in before we continue..." -n 1 -r
 mas install 1333542190	        # 1Password
 mas install 937984704           # Amphetamine
