@@ -10,7 +10,7 @@
 ## Homebrew
 ## - Last updated command:  24/03/2020
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew install mas                            # mas-cli - https://github.com/mas-cli/mas - Required for app store script
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-brew cask install choosy
-brew cask install firefox
-brew cask install microsoft-edge
-#brew cask install google-chrome     # Deprecated from my life
+brew install --cask choosy
+brew install --cask firefox
+brew install --cask microsoft-edge
+brew install --cask brave-browser
+

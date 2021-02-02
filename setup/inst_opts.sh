@@ -2,7 +2,7 @@
 
 read -p "Do you want to install 'VMWare Fusion'? " -n 1 -r
 echo
-[[ $REPLY =~ ^[Yy]$ ]] && brew cask install vmware-fusion
+[[ $REPLY =~ ^[Yy]$ ]] && brew install --cask vmware-fusion
 
 read -p "Do you want to install 'Spark'? " -n 1 -r
 echo
@@ -10,11 +10,11 @@ echo
 
 read -p "Do you want to install 'Alfred'? " -n 1 -r
 echo
-[[ $REPLY =~ ^[Yy]$ ]] && brew cask install alfred
+[[ $REPLY =~ ^[Yy]$ ]] && brew install --cask alfred
 
 read -p "Do you want to install 'Bartender'? " -n 1 -r
 echo
-[[ $REPLY =~ ^[Yy]$ ]] && brew cask install bartender
+[[ $REPLY =~ ^[Yy]$ ]] && brew install --cask bartender
 
 read -p "Do you want to install 'Display Menu'? " -n 1 -r
 echo
@@ -26,11 +26,11 @@ echo
 
 read -p "Do you want to install 'Powershell'? " -n 1 -r
 echo
-[[ $REPLY =~ ^[Yy]$ ]] && brew cask install powershell
+[[ $REPLY =~ ^[Yy]$ ]] && brew install --cask powershell
 
 read -p "Do you want to install 'Parallels Desktop'? " -n 1 -r
 echo
-[[ $REPLY =~ ^[Yy]$ ]] && brew cask install parallels
+[[ $REPLY =~ ^[Yy]$ ]] && brew install --cask parallels
 
 read -p "Do you want to install 'Speedtest'? " -n 1 -r
 echo
@@ -38,4 +38,4 @@ echo
 
 read -p "Do you want to install 'Zoom.us'? " -n 1 -r
 echo
-[[ $REPLY =~ ^[Yy]$ ]] && brew cask install zoomus
+[[ $REPLY =~ ^[Yy]$ ]] && brew install --cask zoomus

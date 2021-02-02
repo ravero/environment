@@ -6,16 +6,16 @@ mas install 1388020431          # DevCleaner
 mas install 640199958		    # Apple Developer
 mas install 768053424           # Gapplin
 
-brew cask install visual-studio-code
-brew cask install postman
-brew cask install oracle-jdk
-brew cask install android-studio
-brew cask install rider
-brew cask install microsoft-azure-storage-explorer
-brew cask install azure-data-studio
-brew cask install docker
-brew cask install fork
-brew cask install reflector
-brew cask install iterm2
-brew cask install upwork
-brew cask install staruml
+brew install --cask visual-studio-code
+brew install --cask postman
+brew install --cask oracle-jdk
+brew install --cask android-studio
+brew install --cask rider
+brew install --cask microsoft-azure-storage-explorer
+brew install --cask azure-data-studio
+brew install --cask docker
+brew install --cask fork
+brew install --cask reflector
+brew install --cask iterm2
+brew install --cask upwork
+brew install --cask staruml

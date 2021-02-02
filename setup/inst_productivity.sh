@@ -8,9 +8,10 @@ mas install 409201541           # Pages
 mas install 409203825           # Numbers
 mas install 409183694           # Keynote
 mas install 1310686187          # Scrivener 3
+mas install 975937182		# Fantastical
 
-brew cask install notion
-brew cask install marked
+brew install --cask notion
+brew install --cask marked
 
 read -p "Do you want to install Microsoft Office from the App Store? " -n 1 -r
 echo
@@ -24,6 +25,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     mas install 823766827           # OneDrive
 else
     echo "Installing Microsoft Office from brew cask..."
-    brew cask install microsoft-office
+    brew install --cask microsoft-office
 fi
 
