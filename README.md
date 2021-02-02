@@ -1,3 +1,7 @@
-# Rafael Veronezi Personal scripts repository
+# Hakan Satya Environment
 
-This folder/repository include the set of scripts I've been using for several tasks at macOS.
+My personal environment settings and tools.
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ravero/environment/master/env-bootstrap.sh)"
+```
