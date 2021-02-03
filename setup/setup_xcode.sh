@@ -9,4 +9,4 @@ if [[ ! -d "$themes_path" ]]; then
     mkdir $themes_path
 fi
 
-cp data/xcode-themes/* $themes_path
+cp ../data/xcode-themes/* $themes_path

@@ -2,15 +2,27 @@
 #------------------------------------------------------------------------------
 # Install settings
 #------------------------------------------------------------------------------
+pref_file="MonoDevelopProperties.xml"
 pref_folder="${HOME}/Library/Preferences/VisualStudio/8.0/"
+pref_path="${pref_folder}${pref_file}"
+pref_path_previous="${pref_path}.previous"
 
-if [[ !-d "${pref_folder}" ]]; then
+# Check if the preferences folder exists
+if [[ ! -d "${pref_folder}" ]]
+then
   echo "Creating Preferences folder for VSMac 2019"
   mkdir "${pref_folder}"
 fi
 
+# Check if the properties file exists and back it up
+if [[ -f "${pref_path}" ]]
+then
+  echo "Backing up current preferences file..."
+  mv "${pref_path}" "${pref_path_previous}"
+fi
+
 echo "Copying Preferences to VSMac 2019"
-cp -rfv data/visual-studio/preferences/MonoDevelopProperties.xml "${snippets_folder}"
+cp -rfv "${PWD}/../data/visual-studio/preferences/MonoDevelopProperties.xml" "${pref_folder}"
 
 #------------------------------------------------------------------------------
 # Install snippets for Visual Studio Mac.
@@ -24,4 +36,4 @@ if [[ ! -d "${snippets_folder}" ]]; then
 fi
 
 echo "Copying Snippets to VS2019..."
-cp -rfv data/visual-studio/code-snippets/* "${snippets_folder}"
+cp -rfv ../data/visual-studio/code-snippets/* "${snippets_folder}"
