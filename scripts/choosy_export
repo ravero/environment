@@ -13,7 +13,7 @@ fi
 
 # Reference to the export file
 export_filename="choosy_behaviours.plist"
-export_folder="./data"
+export_folder="${PWD}/../data/choosy"
 export_file="${export_folder}/${export_filename}"
 
 if [[ ! -d "${export_folder}" ]]; then

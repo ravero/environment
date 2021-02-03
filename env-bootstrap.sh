@@ -10,14 +10,17 @@ then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-## Clone the Environment Repository
-ENVIRONMENT_GIT_REMOTE="git@github.com:ravero/environment.git"
+## Clone the Environment Repository if it doesn't exists
 ENVIRONMENT_LOCAL_PATH="${HOME}/Environment"
 
-# Check if the Environment Folder doesn't already exists
 if [[ ! -d $ENVIRONMENT_LOCAL_PATH ]]; then
-    git clone $ENVIRONMENT_GIT_REMOTE "${ENVIRONMENT_LOCAL_PATH}"
+    ENVIRONMENT_GIT_REMOTE_SSH="git@github.com:ravero/environment.git"
+    ENVIRONMENT_GIT_REMOTE_HTTPS="https://github.com/ravero/environment.git"
+    git clone $ENVIRONMENT_GIT_REMOTE_HTTPS "${ENVIRONMENT_LOCAL_PATH}"
 fi
+
+# Setup Network devices
+source "${ENVIRONMENT_LOCAL_PATH}/setup/setup_network.sh"
 
 # Install essential stuff
 brew install mas                            # mas-cli - https://github.com/mas-cli/mas - Required for app store script
