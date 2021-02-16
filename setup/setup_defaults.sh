@@ -19,12 +19,15 @@
 #
 # For further information about the duti usage check the man pages `man duti`
 #
-# To retrieve the Bundle ID of an application use the following command:
+# To retrieve the Bundle ID of an application use one of the following commands:
 #
 #   codesign -dv --entitlements - /Applications/[Application.app]
+#   cat /Applications/[Application.app]/Contents/Info.plist | grep -A1 CFBundleIdentifier
 #
-# The bundle ID will appear in the second line with the `Identifier` prefix.
+# The first is for signed apps. The bundle ID will appear in the second line with the `Identifier` prefix.
 # Reference: https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMare-Tunnel-on-Linux/GUID-AWT-EXTRACTMACOSBUNDLEID.html
+#
+# The second should be used if the app is unsigned. The grep command will show the required line.
 #------------------------------------------------------------------------------
 
 duti -s org.videolan.vlc mp4 viewer
@@ -33,3 +36,4 @@ duti -s com.microsoft.VSCode txt all
 duti -s com.microsoft.VSCode json all
 duti -s com.microsoft.VSCode sh all
 duti -s com.microsoft.VSCode PublishSettings all
+duti -s pl.com.salsoft.SQLiteStudio db all

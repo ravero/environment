@@ -19,3 +19,4 @@ brew install --cask reflector
 brew install --cask iterm2
 brew install --cask upwork
 brew install --cask staruml
+brew install --cask sqlitestudio
