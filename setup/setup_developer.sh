@@ -13,3 +13,6 @@ sudo gem install cocoapods
 
 ## Swift Lint
 brew install swiftlint
+
+## MKDocs with Material
+pip3 install mkdocs-material

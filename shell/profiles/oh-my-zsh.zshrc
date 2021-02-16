@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 DEFAULT_USER=`whoami`
@@ -123,6 +123,9 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 export GREP_OPTIONS='--color=always'
 export GREP_COLOR='1;35;40'
 
+# iTerm 2 Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
 #------------------------------------------------------------------------------
 # Aliases Configuration
 #------------------------------------------------------------------------------
@@ -138,3 +141,7 @@ alias podiu="pod install --repo-update"
 
 # Open in Fork aliases
 alias fkenv="fork $HOME/Environment/"
+
+# .NET Core aliases
+alias dntl="dotnet tool list -g"
+alias dntuef="dotnet tool update -g dotnet-ef"
