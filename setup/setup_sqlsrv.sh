@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #------------------------------------------------------------------------------
-# Use this script to setup a local SQL Server instance 
+# Use this script to setup a local SQL Server instance on Docker
 #------------------------------------------------------------------------------
 
 sudo docker pull mcr.microsoft.com/mssql/server:2017-latest
