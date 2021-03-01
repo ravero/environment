@@ -38,18 +38,6 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
-		<integer>0</integer>
-		<key>behaviourArgument</key>
-		<string></string>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "accounts.google.com" AND URL CONTAINS "ciandt.com"</string>
-		<key>title</key>
-		<string>Google Login - CI&amp;T</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
 		<integer>6</integer>
 		<key>behaviourArgument</key>
 		<dict>
@@ -84,7 +72,7 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
-		<integer>0</integer>
+		<integer>3</integer>
 		<key>behaviourArgument</key>
 		<string></string>
 		<key>enabled</key>
@@ -96,194 +84,7 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Firefox.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "ciandt.deskdrop.co"</string>
-		<key>title</key>
-		<string>CI&amp;T - DeskDrop</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Firefox.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "drive.google.com"</string>
-		<key>title</key>
-		<string>CI&amp;T - Google Drive</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Firefox.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "docs.google.com"</string>
-		<key>title</key>
-		<string>CI&amp;T - Google Docs</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Firefox.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "meet.google.com"</string>
-		<key>title</key>
-		<string>CI&amp;T - Meetings</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Firefox.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "sites.google.com/a/ciandt.com/"</string>
-		<key>title</key>
-		<string>CI&amp;T - Sites</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Microsoft Edge.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "console.firebase.google.com"</string>
-		<key>title</key>
-		<string>ABInbev - Firebase Console</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Microsoft Edge.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "anheuserbuschinbev.sharepoint.com" OR URL CONTAINS "anheuserbuschinbev-my.sharepoint.com"</string>
-		<key>title</key>
-		<string>ABInbev - Sharepoint</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Microsoft Edge.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "ab-inbev.zoom.us" OR URL CONTAINS "applications.zoom.us"</string>
-		<key>title</key>
-		<string>ABInbev - Zoom</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Microsoft Edge.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "ab-inbev.visualstudio.com" OR URL CONTAINS "dev.azure.com/ab-inbev"</string>
-		<key>title</key>
-		<string>CI&amp;T/ABI - DevOps</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Microsoft Edge.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "ab-inbev.atlassian.net"</string>
-		<key>title</key>
-		<string>CI&amp;T/ABI - Jira/Atlassian Stuff</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Microsoft Edge.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "newrelic.com"</string>
-		<key>title</key>
-		<string>CI&amp;T/ABI - New Relic</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>0</integer>
+		<integer>3</integer>
 		<key>behaviourArgument</key>
 		<string></string>
 		<key>enabled</key>
@@ -295,7 +96,7 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
-		<integer>3</integer>
+		<integer>1</integer>
 		<key>behaviourArgument</key>
 		<string></string>
 		<key>enabled</key>
