@@ -112,6 +112,7 @@ export PATH=$DATA_PATH/bin/scripts:$PATH
 export PATH=$DATA_PATH/bin/flutter/bin:$PATH
 export PATH=$HOME/.dotnet/tools:$PATH
 export PATH=$HOME/Library/Python/2.7/bin:$PATH
+export PATH=$HOME/Environment/scripts:$PATH
 
 # Android SDK Settings
 export ANDROID_HOME=$HOME/Library/Android/SDK
@@ -145,3 +146,6 @@ alias fkenv="fork $HOME/Environment/"
 # .NET Core aliases
 alias dntl="dotnet tool list -g"
 alias dntuef="dotnet tool update -g dotnet-ef"
+
+# Git aliases
+alias gitcb="git clone-branches"
