@@ -6,4 +6,4 @@ mas install 803453959           # Slack
 brew install --cask signal
 brew install --cask skype
 brew install --cask whatsapp
-
+brew install --cask microsoft-teams
